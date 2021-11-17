@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { LogoIcon, ArrowIcon } from "./icons";
-import book from "../assets/images/book.jpg";
+// import book from "../assets/images/book.jpg";
 
 const HeroSection = () => {
   return (
@@ -11,10 +11,10 @@ const HeroSection = () => {
           <header>
             <LogoIcon />
             <div className="buttons">
-              <a href="#">Home</a>
-              <a href="#">Pages</a>
-              <a href="#">Shop</a>
-              <a href="#">Blog</a>
+              <a href="https://yandex.ru">Home</a>
+              <a href="https://yandex.ru">Pages</a>
+              <a href="https://yandex.ru">Shop</a>
+              <a href="https://yandex.ru">Blog</a>
             </div>
           </header>
           <div className="hero d-flex justify-content-between">

@@ -52,7 +52,7 @@ const BookComponent = (props) => {
       <Styles>
         <div className="border">
           <Image
-            src="./assets/book.jpg"
+            src="../assets/images/book.jpg"
             alt="book"
             fluid
             className="card-image"
