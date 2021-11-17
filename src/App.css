@@ -1,0 +1,129 @@
+body,
+html {
+  font-family: Gilroy;
+  background-color: #eceeeb;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 40px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+
+  padding: 0 45px;
+}
+
+.hero {
+  display: flex;
+
+  padding-top: 164px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 35px;
+}
+
+h1 {
+  font-family: Recoleta;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 130.69%;
+  color: black;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0%;
+}
+
+.hero p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130.69%;
+}
+
+.search {
+  background-color: white;
+}
+
+.search-components {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-components button {
+  margin: 20px;
+  background-color: #00a96c;
+  border-radius: 0%;
+  border: none;
+  font-size: 24px;
+  color: white;
+  padding: 10px 40px;
+}
+
+.search-components input {
+  margin: 25px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.right p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.arrow-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  background-color: white;
+  border: 8px solid #eceeeb;
+  left: 50%;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.second {
+  background-color: white;
+}
+
+.heading {
+  margin-bottom: 90px;
+  padding-top: 100px;
+}
+
+section.main {
+  position: relative;
+  padding-bottom: 90px;
+}
