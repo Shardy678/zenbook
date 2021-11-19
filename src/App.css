@@ -128,3 +128,14 @@ section.main {
   position: relative;
   padding-bottom: 90px;
 }
+
+.border {
+  display: flex;
+  border: 1px solid #e3e3e3;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.customer-section {
+  background: white;
+}

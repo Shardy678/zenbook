@@ -3,13 +3,6 @@ import styled from "styled-components";
 import Image from "react-bootstrap/Image";
 
 const Styles = styled.div`
-  .border {
-    display: flex;
-    border: 1px solid #e3e3e3;
-    box-sizing: border-box;
-    flex-direction: column;
-  }
-
   .image {
     height: 255px;
     width: 255px;

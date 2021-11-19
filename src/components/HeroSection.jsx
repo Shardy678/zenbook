@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { LogoIcon, ArrowIcon } from "./icons";
-// import book from "../assets/images/book.jpg";
 
 const HeroSection = () => {
   return (
