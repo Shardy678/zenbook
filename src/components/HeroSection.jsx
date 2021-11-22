@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { LogoIcon, ArrowIcon } from "./icons";
+import books from "./assets/images/books.png";
 
 const HeroSection = () => {
   return (
@@ -20,8 +21,9 @@ const HeroSection = () => {
             <div className="left col-6">
               <h1>Buy and sell your textbooks for the best price</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
-                aliquam nunc condimentum eget orci morbi sapien cursus.
+                From applied literature to educational resources, we have a lot
+                of textbooks to offer you. We provide only the best books for
+                rent.
               </p>
               <div className="search">
                 <div className="search-components">
@@ -31,7 +33,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="right col-5">
-              <img src="../assets/images/book.jpg" alt="books" />
+              <img src={books} alt="books" className="img-fluid" />
               <div className="description">
                 <h5>Brave New World</h5>
                 <p>Aldous Huxley</p>

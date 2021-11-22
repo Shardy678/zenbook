@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import BookComponent from "./BookComponent";
+import book from "./assets/images/book.jpg";
 
 const OtherBookSection = () => {
   return (
@@ -9,10 +10,10 @@ const OtherBookSection = () => {
         <section className="best-seller">
           <h1 className="text-center heading">Other Books</h1>
           <div className="row">
-            <BookComponent name="Sample" description="Sample" />
-            <BookComponent name="Sample" description="Sample" />
-            <BookComponent name="Sample" description="Sample" />
-            <BookComponent name="Sample" description="Sample" />
+            <BookComponent image={book} name="Sample" description="Sample" />
+            <BookComponent image={book} name="Sample" description="Sample" />
+            <BookComponent image={book} name="Sample" description="Sample" />
+            <BookComponent image={book} name="Sample" description="Sample" />
           </div>
         </section>
       </Container>

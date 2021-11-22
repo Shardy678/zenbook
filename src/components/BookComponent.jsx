@@ -44,12 +44,7 @@ const BookComponent = (props) => {
     <div className="col-3">
       <Styles>
         <div className="border">
-          <Image
-            src="../assets/images/book.jpg"
-            alt="book"
-            fluid
-            className="card-image"
-          />
+          <Image src={props.image} alt="book" fluid className="card-image" />
           <div className="text">
             <h5>{props.name}</h5>
             <hr />
