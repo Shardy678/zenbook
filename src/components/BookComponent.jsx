@@ -3,11 +3,11 @@ import styled from "styled-components";
 import Image from "react-bootstrap/Image";
 
 const Styles = styled.div`
-  .image {
-    height: 255px;
-    width: 255px;
-    background-color: gray;
-    margin: 10px;
+  .card-text {
+    margin: 15px;
+  }
+  .card-image {
+    padding: 10px;
   }
 
   h5 {
@@ -18,20 +18,12 @@ const Styles = styled.div`
     color: black;
   }
 
-  .text {
-    margin: 15px;
-  }
-
   p {
     font-family: Gilroy;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     color: black;
-  }
-
-  .card-image {
-    padding: 10px;
   }
 
   hr {
@@ -41,18 +33,16 @@ const Styles = styled.div`
 
 const BookComponent = (props) => {
   return (
-    <div className="col-3">
-      <Styles>
-        <div className="border">
-          <Image src={props.src} alt={props.alt} fluid className="card-image" />
-          <div className="text">
-            <h5>{props.name}</h5>
-            <hr />
-            <p>{props.author}</p>
-          </div>
+    <Styles>
+      <div className="border">
+        <Image src={props.src} alt={props.alt} fluid className="card-image" />
+        <div className="card-text">
+          <h5>{props.name}</h5>
+          <hr />
+          <p>{props.author}</p>
         </div>
-      </Styles>
-    </div>
+      </div>
+    </Styles>
   );
 };
 

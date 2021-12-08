@@ -5,9 +5,9 @@ import styled from "styled-components";
 const Styles = styled.div`
   .background {
     background: #eceeeb;
-    height: 270px;
     padding-top: 60px;
     margin-bottom: 20px;
+    padding-bottom: 60px;
   }
   h1 {
     font-size: 48px;
@@ -27,9 +27,9 @@ const Styles = styled.div`
 const AdSection = () => {
   return (
     <Styles>
-      <div className="background">
+      <div className="background text-sm-center text-md-start">
         <Container>
-          <h1 className="col-7">
+          <h1 className="col-12 col-lg-6">
             2021 National Book Award for Fiction shortlist
           </h1>
           <button>Shop</button>

@@ -5,14 +5,11 @@ import { StarIcon } from "./icons";
 const Styles = styled.div`
   .border {
     padding: 50px 30px;
-  }
-  .flex-item {
-    margin-bottom: 30px;
+    height: 385px;
   }
   .user-icon {
     width: 65px;
     height: 65px;
-    background-color: gray;
     border-radius: 50%;
     margin-right: 10px;
   }
@@ -40,28 +37,27 @@ const Styles = styled.div`
 
     color: #c4c4c4;
   }
+  @media screen and (max-width: 1400px) {
+    .border {
+      height: 310px;
+    }
+  }
 `;
-const ReviewCard = () => {
+const ReviewCard = (props) => {
   return (
-    <div className="col-4">
-      <Styles>
-        <div className="border flex-item">
-          <StarIcon className="flex-item" />
-          <p className="flex-item">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam
-            felis, vel vel. Velit est tempor at sagittis amet, in neque. Mauris
-            diam ipsum id faucibus leo, diam urna. Laoreet ligula.
-          </p>
-          <div className="d-flex align-items-center">
-            <div className="user-icon"></div>
-            <div className="d-flex flex-column align-items-start">
-              <h5>Jane Cooper</h5>
-              <h6>Marketing coordinator</h6>
-            </div>
+    <Styles>
+      <div className="border">
+        <StarIcon />
+        <p>{props.review}</p>
+        <div className="d-flex align-items-center">
+          <img className="user-icon" src={props.image} alt={props.name} />
+          <div className="d-flex flex-column align-items-start">
+            <h5>{props.name}</h5>
+            <h6> {props.position} </h6>
           </div>
         </div>
-      </Styles>
-    </div>
+      </div>
+    </Styles>
   );
 };
 
